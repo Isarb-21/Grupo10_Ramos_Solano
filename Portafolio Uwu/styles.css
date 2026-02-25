@@ -1,14 +1,14 @@
 :root {
-    --color-primario: #830000;
-    --color-secundario: #01060f;
-    --acento: #d8d0d0;
+    --color-primario: #eb2f2f;
+    --color-secundario: #381913;
+    --acento: #ec2210;
     --fuente-principal: 'Roboto', sans-serif;
 }
 
 .header {
-    background: linear-gradient(200deg, var(--color-primario), var(--color-secundario));
-    color: white;
-    padding: 80px 20px;
+    background: linear-gradient(170deg, var(--color-primario), var(--color-secundario));
+    color: rgb(255, 255, 255);
+    padding: 50px 10px;
     text-align: center;
 }
 
@@ -24,6 +24,34 @@
 }
 
 
+.sobre_mi-fluid {
+    background-color: #e9e2e9; /* color del cuadro */
+    padding: 20px; /* espacio interno */
+    border-radius: 12px; /* esquinas redondeadas */
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra */
+    width: 90%; /* ancho del cuadro */
+    max-width: 400px;
+
+    margin: 20px auto; /* centra horizontalmente */
+
+    /*margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;  centra el texto */
+}
+
+.sobre_mi h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 1;
+}
+
+.sobre_mi p {
+    font-size: 14px;
+    text-align: left;
+}
+
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -31,18 +59,21 @@
     margin: 40px 0;
 }
 
-.project-card {
+.projects-card {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
+.projects-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+.projects-card {
+    animation: fadeIn 0.6s ease-out;
+}
 
 @keyframes fadeIn {
     from {
@@ -66,10 +97,21 @@
     }
 }
 
-.project-card {
-    animation: fadeIn 0.6s ease-out;
-}
-
 .skill-badge {
     animation: slideInLeft 0.6s ease-out;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 32px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
