@@ -4,191 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio Profesional</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (solo overrides y variables) -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER: barra de navegación fija -->
-    <header class="header">
-        <a href="#" class="logo">Julián Andrés</a>
+    <!-- ===================== NAVBAR (Bootstrap) ===================== -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar">
+        <div class="container-fluid px-4 px-md-5">
 
-        <!-- Ícono hamburguesa para móvil, el JS lo activa -->
-        <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+            <a class="navbar-brand logo" href="#">Julián Andrés</a>
 
-        <nav class="navbar" id="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+            <!-- Botón hamburguesa Bootstrap -->
+            <button class="navbar-toggler border-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars" style="color: var(--main-color); font-size: 2rem;"></i>
+            </button>
 
-
-    <!-- HOME: presentación principal -->
-    <section class="home" id="home">
-
-        <div class="home-img">
-            <!-- Reemplaza la ruta con tu foto real -->
-            <img src="assets/image/img1.jpg" alt="Foto de Julián Andrés">
-        </div>
-
-        <div class="home-content">
-            <h1>Holap, soy <span>Julián Andrés</span></h1>
-            <h3>Estudiante de Ingeniería Mecatrónica</h3>
-            <p>
-                Estoy interesado en el desarrollo de soluciones tecnológicas y digitales.
-                Me gusta combinar la programación, la electrónica y el diseño para crear
-                proyectos funcionales e innovadores. Estoy en constante aprendizaje y me
-                interesa fortalecer mis habilidades en desarrollo web, automatización y
-                sistemas inteligentes.
-            </p>
-
-            <div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-
-            <a href="#" class="btn-cv">Descargar CV</a>
-        </div>
-
-    </section>
-
-
-    <!-- PROYECTOS -->
-    <section class="projects" id="proyectos">
-
-        <h2 class="titulo-seccion">Mis <span>Proyectos</span></h2>
-
-        <div class="projects-grid">
-
-            <div class="projects-card">
-                <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
-                <h3>Brazo Robótico</h3>
-                <p>Diseño y control de un brazo robótico de 3 grados de libertad con Arduino y servomotores.</p>
-                <div class="card-badges">
-                    <span class="badge">Arduino</span>
-                    <span class="badge">C++</span>
-                    <span class="badge">SolidWorks</span>
-                </div>
-                <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
-            </div>
-
-            <div class="projects-card">
-                <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-                <h3>Portafolio Web</h3>
-                <p>Sitio web personal con HTML, CSS y JavaScript para mostrar proyectos y habilidades.</p>
-                <div class="card-badges">
-                    <span class="badge">HTML</span>
-                    <span class="badge">CSS</span>
-                    <span class="badge">JavaScript</span>
-                </div>
-                <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
-            </div>
-
-            <div class="projects-card">
-                <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
-                <h3>Sistema de Automatización</h3>
-                <p>Automatización de un proceso industrial con sensores, actuadores y lógica de control.</p>
-                <div class="card-badges">
-                    <span class="badge">PLC</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">Electrónica</span>
-                </div>
-                <a href="#" class="card-link"><i class="fa-brands fa-github"></i> Ver en GitHub</a>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- HABILIDADES -->
-    <section class="habilidades" id="habilidades">
-
-        <h2 class="titulo-seccion">Mis <span>Habilidades</span></h2>
-
-        <div class="habilidades-grid">
-
-            <div class="habilidad-card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Programación</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>C / C++</li>
-                    <li>JavaScript</li>
-                    <li>HTML & CSS</li>
-                </ul>
-            </div>
-
-            <div class="habilidad-card">
-                <i class="fa-solid fa-microchip"></i>
-                <h3>Electrónica</h3>
-                <ul>
-                    <li>Arduino</li>
-                    <li>Raspberry Pi</li>
-                    <li>Sensores y Actuadores</li>
-                    <li>Circuitos</li>
-                </ul>
-            </div>
-
-            <div class="habilidad-card">
-                <i class="fa-solid fa-wrench"></i>
-                <h3>Diseño</h3>
-                <ul>
-                    <li>SolidWorks</li>
-                    <li>AutoCAD</li>
-                    <li>Impresión 3D</li>
-                    <li>Figma</li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                <ul class="navbar-nav gap-md-3 py-3 py-md-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
 
         </div>
+    </nav>
+
+
+    <!-- ===================== HOME ===================== -->
+    <section class="home-section d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center gy-5">
+
+                <!-- Foto -->
+                <div class="col-12 col-md-auto text-center">
+                    <img src="assets/image/img1.jpg" alt="Foto de Julián Andrés" class="profile-img">
+                </div>
+
+                <!-- Texto -->
+                <div class="col-12 col-md-7 text-center text-md-start">
+                    <h1 class="display-4 fw-bold">Holap, soy <span class="text-accent">Julián Andrés</span></h1>
+                    <h3 class="fs-4 fw-normal text-accent my-3">Estudiante de Ingeniería Mecatrónica</h3>
+                    <p class="text-muted-custom mb-4">
+                        Estoy interesado en el desarrollo de soluciones tecnológicas y digitales.
+                        Me gusta combinar la programación, la electrónica y el diseño para crear
+                        proyectos funcionales e innovadores. Estoy en constante aprendizaje y me
+                        interesa fortalecer mis habilidades en desarrollo web, automatización y
+                        sistemas inteligentes.
+                    </p>
+
+                    <!-- Redes sociales -->
+                    <div class="d-flex gap-3 mb-4 justify-content-center justify-content-md-start">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+
+                    <a href="#" class="btn btn-accent rounded-pill px-4 py-2">
+                        Descargar CV
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
-    <!-- FOOTER / CONTACTO -->
-    <footer class="footer" id="contacto">
+    <!-- ===================== PROYECTOS ===================== -->
+    <section class="section-dark py-5" id="proyectos">
+        <div class="container py-5">
 
-        <h2 class="titulo-seccion">Contac<span>tarme</span></h2>
+            <h2 class="section-title text-center mb-5">Mis <span class="text-accent">Proyectos</span></h2>
 
-        <div class="contacto-grid">
+            <div class="row g-4 justify-content-center">
 
-            <div class="contacto-card">
-                <i class="fa-solid fa-envelope"></i>
-                <h3>Email</h3>
-                <a href="mailto:julian@email.com">julian@email.com</a>
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 p-4">
+                        <div class="card-icon mb-3"><i class="fa-solid fa-robot"></i></div>
+                        <h5 class="card-title fw-semibold">Brazo Robótico</h5>
+                        <p class="card-text text-muted-custom flex-grow-1">
+                            Diseño y control de un brazo robótico de 3 grados de libertad con Arduino y servomotores.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 my-3">
+                            <span class="badge tech-badge">Arduino</span>
+                            <span class="badge tech-badge">C++</span>
+                            <span class="badge tech-badge">SolidWorks</span>
+                        </div>
+                        <a href="#" class="card-link"><i class="fa-brands fa-github me-1"></i> Ver en GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 p-4">
+                        <div class="card-icon mb-3"><i class="fa-solid fa-globe"></i></div>
+                        <h5 class="card-title fw-semibold">Portafolio Web</h5>
+                        <p class="card-text text-muted-custom flex-grow-1">
+                            Sitio web personal con HTML, CSS y JavaScript para mostrar proyectos y habilidades.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 my-3">
+                            <span class="badge tech-badge">HTML</span>
+                            <span class="badge tech-badge">CSS</span>
+                            <span class="badge tech-badge">JavaScript</span>
+                        </div>
+                        <a href="#" class="card-link"><i class="fa-brands fa-github me-1"></i> Ver en GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card project-card h-100 p-4">
+                        <div class="card-icon mb-3"><i class="fa-solid fa-microchip"></i></div>
+                        <h5 class="card-title fw-semibold">Sistema de Automatización</h5>
+                        <p class="card-text text-muted-custom flex-grow-1">
+                            Automatización de un proceso industrial con sensores, actuadores y lógica de control.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 my-3">
+                            <span class="badge tech-badge">PLC</span>
+                            <span class="badge tech-badge">Python</span>
+                            <span class="badge tech-badge">Electrónica</span>
+                        </div>
+                        <a href="#" class="card-link"><i class="fa-brands fa-github me-1"></i> Ver en GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section class="section-dark-alt py-5" id="habilidades">
+        <div class="container py-5">
+
+            <h2 class="section-title text-center mb-5">Mis <span class="text-accent">Habilidades</span></h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card skill-card text-center h-100 p-4">
+                        <i class="fa-solid fa-code skill-icon mb-3"></i>
+                        <h5 class="fw-semibold mb-3">Programación</h5>
+                        <ul class="list-unstyled skill-list">
+                            <li>Python</li>
+                            <li>C / C++</li>
+                            <li>JavaScript</li>
+                            <li>HTML &amp; CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card skill-card text-center h-100 p-4">
+                        <i class="fa-solid fa-microchip skill-icon mb-3"></i>
+                        <h5 class="fw-semibold mb-3">Electrónica</h5>
+                        <ul class="list-unstyled skill-list">
+                            <li>Arduino</li>
+                            <li>Raspberry Pi</li>
+                            <li>Sensores y Actuadores</li>
+                            <li>Circuitos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card skill-card text-center h-100 p-4">
+                        <i class="fa-solid fa-wrench skill-icon mb-3"></i>
+                        <h5 class="fw-semibold mb-3">Diseño</h5>
+                        <ul class="list-unstyled skill-list">
+                            <li>SolidWorks</li>
+                            <li>AutoCAD</li>
+                            <li>Impresión 3D</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================== FOOTER / CONTACTO ===================== -->
+    <footer class="section-dark py-5" id="contacto">
+        <div class="container py-5">
+
+            <h2 class="section-title text-center mb-5">Contac<span class="text-accent">tarme</span></h2>
+
+            <!-- Info de contacto -->
+            <div class="row g-4 justify-content-center mb-5">
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card contact-card text-center h-100 p-4">
+                        <i class="fa-solid fa-envelope contact-icon d-block mb-2"></i>
+                        <h6 class="fw-semibold mb-2">Email</h6>
+                        <a href="mailto:julian@email.com" class="contact-link">julian@email.com</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card contact-card text-center h-100 p-4">
+                        <i class="fa-brands fa-linkedin contact-icon d-block mb-2"></i>
+                        <h6 class="fw-semibold mb-2">LinkedIn</h6>
+                        <a href="#" target="_blank" class="contact-link">/in/juliansolano</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="card contact-card text-center h-100 p-4">
+                        <i class="fa-brands fa-github contact-icon d-block mb-2"></i>
+                        <h6 class="fw-semibold mb-2">GitHub</h6>
+                        <a href="#" target="_blank" class="contact-link">/juliansolano</a>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="contacto-card">
-                <i class="fa-brands fa-linkedin"></i>
-                <h3>LinkedIn</h3>
-                <a href="#" target="_blank">/in/juliansolano</a>
+            <!-- Formulario -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" id="nombre" class="form-control custom-input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="email" class="form-control custom-input" placeholder="Tu email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea id="mensaje" class="form-control custom-input" rows="4" placeholder="Tu mensaje..." required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-accent rounded-pill py-3 fw-semibold">
+                                Enviar mensaje <i class="fa-solid fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
-            <div class="contacto-card">
-                <i class="fa-brands fa-github"></i>
-                <h3>GitHub</h3>
-                <a href="#" target="_blank">/juliansolano</a>
-            </div>
+            <p class="text-center footer-copy mt-5">© 2024 Julián Andrés Solano. Todos los derechos reservados.</p>
 
         </div>
-
-        <!-- Formulario de contacto -->
-        <form class="contacto-form" id="contactForm">
-            <input type="text" id="nombre" placeholder="Tu nombre" required>
-            <input type="email" id="email" placeholder="Tu email" required>
-            <textarea id="mensaje" rows="4" placeholder="Tu mensaje..." required></textarea>
-            <button type="submit">Enviar mensaje <i class="fa-solid fa-paper-plane"></i></button>
-        </form>
-
-        <p class="footer-copy">© 2024 Julián Andrés Solano. Todos los derechos reservados.</p>
-
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
