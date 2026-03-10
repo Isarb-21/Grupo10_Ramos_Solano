@@ -85,7 +85,7 @@ html::-webkit-scrollbar-thumb  { background: var(--main-color); border-radius: 4
 ============================================= */
 .home-section {
     min-height: 100vh;
-    padding-top: 8rem;
+    padding-top: 8rem 2rem 6rem;
     background: var(--color-fondo);
 }
 
