@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio CV - Estudiante de ingenieria mecatronica </title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="CSS/styles-portafolio.css">
+    <!-- Javascript -->
+     <script src="Javascript/script-portafolio (1).js"> </script>
+</head>
+<body>
+    <!-- ===============================
+         BARRA DE NAVEGACIÓN
+         =============================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-code"></i> Julian <span>.Dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#acerca">Acerca de mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===============================
+         SECCIÓN HERO
+         =============================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <!--editado-->
+            <img src="imagenes/f754c2d9-b589-4de8-a7f1-0b99d6db6b95.jpeg" class="profile-img-cv rounded float-end" alt="Mi Foto de Perfil">
+            <h1>Julian Solano Ledesma</h1>
+            <p class="subtitle">Estudiante de Ingieneria Mecatronica </p>
+            <p class="description">
+                Especializado en la convergencia de la Ingeniería Mecatrónica y el desarrollo de software.
+                Apasionado por la automatización, el código limpio y la creación de soluciones tecnológicas integrales.
+            </p>
+            <a href="#contacto" class="btn btn-primary-custom">¡Empecemos!</a>
+        </div>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN ACERCA DE MÍ
+         =============================== -->
+    <section id="acerca" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Desarrollador Apasionado</h3>
+                    <p>
+                        Actualmente curso mi carrera en Ingeniería Mecatrónica, donde desarrollo una base 
+                        sólida en sistemas de control y diseño mecánico. Complemento mi educación formal 
+                        con el estudio constante de tecnologías web,buscando unir la robustez de la
+                         ingeniería con la agilidad del desarrollo moderno
+                    </p>
+                    <p>
+                        Mi enfoque se centra en el aprendizaje continuo y la resolución de problemas complejos. 
+                        Disfruto de los retos que requieren tanto lógica de programación como entendimiento físico de los sistemas.
+                    </p>
+                    <p>
+                        Fuera de las aulas, me apasiona aplicar lo aprendido en proyectos de código abierto y 
+                        prototipado rápido, siempre con el objetivo de convertir ideas abstractas en herramientas funcionales.</p>
+                </div>
+                <div>
+                    <ul class="info-list">
+                        <li>
+                            <strong>Nombre:</strong>
+                            <span>Julian Andres Solano Ledesma </span>
+                        </li>
+                        <li>
+                            <strong>Ubicación:</strong>
+                            <span>Colombia</span>
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            <span><a href="jsolanoledesma@gmail.com" style="color: var(--secondary-color);">juan@example.com</a></span>
+                        </li>
+        
+                        <li>
+                            <strong>Disponibilidad:</strong>
+                            <span>Abierto a Oportunidades</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN HABILIDADES
+         =============================== -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card" data-skill="frontend">
+                    <h4><i class="fas fa-code"></i> Diseño mecatronico </h4>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Solidworks </span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--target: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Programacion con Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--target: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Autocad</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--target: 88%"></div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN PROYECTOS
+         =============================== -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pagina web </h3>
+                        <p>
+                           Pagina web basica full stack
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">javascript.js</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN EDUCACIÓN
+         =============================== -->
+    <section id="educacion" class="education">
+        <div class="container">
+            <h2 class="section-title">Educación</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <!-- Educación 1 -->
+                    <div class="education-item">
+                        <h3>Educacion secundaria y media </h3>
+                        <div class="education-date">
+                            <i class="fas fa-graduation-cap"></i> Año graduacion 2023
+                        </div>
+                        <p class="education-school">Claretiano Gustavo Torres Parra</p>
+                       
+                    </div>
+
+                    <!-- Educación 2 -->
+                    <div class="education-item">
+                        <h3>Certificación: cswp solidworks y cswa solidworks</h3>
+                        <div class="education-date">
+                            <i class="fas fa-certificate"></i> 2023
+                        </div>
+                       
+                        <p>
+                            Curso exhaustivo sobre python y machine learning.
+                        </p>
+                    </div>
+
+                    <!-- Educación 3 -->
+                    <div class="education-item">
+                        <h3>Certificación: SENA programacion con python </h3>
+                        <div class="education-date">
+                            <i class="fas fa-certificate"></i> 2024
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+         SECCIÓN CONTACTO
+         =============================== -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">¡Ponte en Contacto!</h2>
+            <p>¿Tienes una pregunta o una oportunidad? No dudes en comunicarte.</p>
+
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"> jsolanoledesma@gmail.com </i>
+                    <p><a href="jsolanoledesma@gmail.com" style="color: rgb(94, 204, 204);"></a></p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-phone">314 8610078</i>
+                    <p><a href="tel:+573001234567" style="color: white;">+57 300 123 4567</a></p>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Neiva/Huila , Colombia</p>
+                </div>
+            </div>
+
+            <div class="social-links mt-4">
+            
+            
+                <a href="https://www.facebook.com/share/1EJ9PMnVa4/" title="Facebook " class="social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.tiktok.com/@drewroots_7w7?_r=1&_t=ZS-94YwRU22484" title="Tiktok" class="social-link">
+                    <i class="fab fa-Tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/little.war12?igsh=dGRvZmtta3BraGFo" title="Instagram" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="name" 
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+                    <div class="mb-3">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            placeholder="Tu email"
+                            required
+                        >
+                    </div>
+                    <div class="mb-3">
+                        <textarea 
+                            class="form-control" 
+                            id="message" 
+                            placeholder="Tu mensaje"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===============================
+         FOOTER
+         =============================== -->
+    <footer>
+        <div class="container">
+            <p>
+                2025 Julian Solano Ledesma <span class="heart"> ❤ </span> usando Bootstrap 5.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript Personalizado -->
+    <script>
+        // ===============================
+        // VARIABLES GLOBALES
+        // ===============================
+        const backToTopBtn = document.getElementById('backToTop');
+        const skillProgressBars = document.querySelectorAll('.skill-progress');
+        const contactForm = document.getElementById('contactForm');
+
+        // ===============================
+        // BACK TO TOP BUTTON
+        // ===============================
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ===============================
+        // ANIMACIÓN DE BARRAS DE HABILIDADES
+        // ===============================
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBar = entry.target;
+                    const targetWidth = progressBar.style.getPropertyValue('--target') || '0';
+                    
+                    // Animar la barra
+                    let currentWidth = 0;
+                    const increment = parseFloat(targetWidth) / 50;
+                    const interval = setInterval(() => {
+                        currentWidth += increment;
+                        if (currentWidth >= parseFloat(targetWidth)) {
+                            currentWidth = parseFloat(targetWidth);
+                            clearInterval(interval);
+                        }
+                        progressBar.style.width = currentWidth + '%';
+                    }, 20);
+                    
+                    observer.unobserve(progressBar);
+                }
+            });
+        }, observerOptions);
+
+        skillProgressBars.forEach(bar => {
+            bar.style.width = '0%';
+            observer.observe(bar);
+        });
+
+        // ===============================
+        // FORMULARIO DE CONTACTO
+        // ===============================
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validación básica
+            if (!name || !email || !message) {
+                mostrarAlerta('Por favor completa todos los campos', 'warning');
+                return;
+            }
+
+            // Validar email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                mostrarAlerta('Por favor ingresa un email válido', 'warning');
+                return;
+            }
+
+            // Simular envío de email
+            const btnSubmit = contactForm.querySelector('.btn-submit');
+            const textOriginal = btnSubmit.textContent;
+            btnSubmit.textContent = 'Enviando...';
+            btnSubmit.disabled = true;
+
+            setTimeout(() => {
+                mostrarAlerta('¡Mensaje enviado exitosamente! Nos pondremos en contacto pronto.', 'success');
+                contactForm.reset();
+                btnSubmit.textContent = textOriginal;
+                btnSubmit.disabled = false;
+            }, 1500);
+        });
+
+        // ===============================
+        // FUNCIÓN PARA MOSTRAR ALERTAS
+        // ===============================
+        function mostrarAlerta(mensaje, tipo = 'info') {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `alert alert-${tipo} alert-dismissible fade show position-fixed`;
+            alertDiv.style.cssText = `
+                top: 100px;
+                right: 20px;
+                z-index: 5000;
+                min-width: 300px;
+            `;
+            alertDiv.textContent = mensaje;
+            alertDiv.innerHTML += '<button type="button" class="btn-close" data-bs-dismiss="alert"></button>';
+
+            document.body.appendChild(alertDiv);
+
+            setTimeout(() => {
+                alertDiv.remove();
+            }, 4000);
+        }
+
+        // ===============================
+        // EFECTO DE FADE-IN AL SCROLL
+        // =============================== */
+        const fadeElements = document.querySelectorAll('.fade-in-up');
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeElements.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transition = 'opacity 0.8s ease';
+            fadeObserver.observe(el);
+        });
+
+        // ===============================
+        // ACTIVE LINK EN NAVEGACIÓN
+        // ===============================
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const sections = document.querySelectorAll('section[id]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===============================
+        // CERRAR MENÚ MÓVIL AL HACER CLICK
+        // ===============================
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+
+        // ===============================
+        // ANIMACIÓN DE ELEMENTOS AL CARGAR
+        // ===============================
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // ===============================
+        // LOG EN LA CONSOLA
+        // ===============================
+        console.log('%cBienvenido a mi portafolio', 'font-size: 20px; color: #3498db; font-weight: bold;');
+        console.log('%c¿Te interesa trabajar juntos? Ponte en contacto conmigo', 'font-size: 14px; color: #e74c3c;');
+    </script>
+</body>
+</html>
