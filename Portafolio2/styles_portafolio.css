@@ -3,7 +3,7 @@ VARIABLES Y ESTILOS PERSONALIZADOS
 =============*/
 :root{
     --primary-color:#2c3e50;
-    --secondary-color:#3498db;
+    --secondary-color:#3458db;
     --accent-color:#e74c3c;
     --light-bg:#ecf0f1;
     --text-dark:#2c3e50;
@@ -556,6 +556,8 @@ BARRA DE NAVEGACIÓN
 .contact-info-item p {
     font-size: 0.95rem;
     margin: 0;
+    word-break: break-all;   /* rompe el email largo */
+    overflow-wrap: break-word;
 }
 
 .social-links {
